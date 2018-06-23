@@ -8,6 +8,6 @@ services:
     volumes:
       - ./prestashop:/var/www/html
   db:
-    image: mysql-server
+    image: mariadb
     environment:
       - MYSQL_ROOT_PASSWORD=password
