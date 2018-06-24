@@ -1,2 +1,2 @@
-docker run -ti --name some-mysql -e MYSQL_ROOT_PASSWORD=admin -d mysql
-docker run -ti --name some-prestashop --link some-mysql -e DB_SERVER=some-mysql -p 8084:80 -d prestashop/prestashop
+docker run -ti --name fede-mysql -e MYSQL_ROOT_PASSWORD=admin -d mysql
+docker run -ti --name fede-prestashop --link fede-mysql -e DB_SERVER=fede-mysql -p 8084:80 -d prestashop/prestashop
